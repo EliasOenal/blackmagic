@@ -8,7 +8,7 @@ MAKEFLAGS += --no-print-dir
 Q := @
 endif
 
-OPT_FLAGS ?= -O2
+OPT_FLAGS ?= -O0
 
 CFLAGS += -Wall -Wextra -Werror -Wno-char-subscripts\
 	$(OPT_FLAGS) -std=gnu99 -g3 -MD \
@@ -54,6 +54,7 @@ SRC =			\
 	samd.c		\
 	stm32f1.c	\
 	stm32f4.c	\
+	stm32h7.c	\
 	stm32l0.c	\
 	stm32l4.c	\
 	swdptap.c	\
